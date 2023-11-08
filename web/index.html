@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document Management</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <div id="loading-overlay" class="overlay">
+        <div class="overlay-content">
+            <div class="loading-spinner"></div>
+            <p>Loading while we are processing your image...</p>
+        </div>
+    </div>
+    <div id="login-container">
+        <h2>Login</h2>
+        <button id="login-button">Login with Amazon Cognito</button>
+    </div>
+    <form>
+        <div id="image-upload-container" class="image-upload-container">
+            <input type="file" id="image-upload" accept="image/*">
+            <label for="image-upload" class="custom-file-upload">
+                <i class="fas fa-cloud-upload-alt"></i> Choose Image
+            </label>
+            <p>Selected Image:</p>
+            <img id="selected-image" src="#" alt="Selected Image">
+            <button id="submit-button" type="button">UploadImage</button>
+        </div>
+    </form>
+    <div id="document-selection" style="display: none;">
+        <h2>Select a Document</h2>
+        <select id="document-dropdown"></select>
+        <button id="open-document-button">Open Document</button>
+        <div id="search-container" style="display: none;">
+            <input type="text" id="search-input" placeholder="Search in Document">
+            <button id="search-button">Search</button>
+        </div>
+    </div>
+    <div id="search-results-container"></div>
+<!-- Add this code after the previous script tag -->
+<script>
+    // Search functionality
+    
+</script>
+</body>
+</html>
